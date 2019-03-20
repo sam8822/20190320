@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<meta charset="utf-8">
+<td><input type="text" id="grade" /></td>
+
+
+<script>
+  function getGrade() {
+ var grade = document.getElementById("grade").value;
+ return grade;
+}
+ function define(){
+  var gg = getGrade();
+  gag = Number(gg)
+  if (gag < 60) {
+   return "不及格";
+} else {
+  return "及格惹！";
+}
+ }
+
+ 
+</script> 
+
+<button type="button"
+onclick= "document.getElementById('demo').innerHTML = define()">
++</button>
+
+
+<p id="demo"></p>
+</body>
+</html>

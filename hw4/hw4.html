@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Canvas</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">>
+</head>
+	<body>
+		<canvas id="myCanvas" width="300" height="150" style="border:1px
+		solid #d3d3d3;">
+		<script>
+			
+			var MyTimer = setInterval(function(){add()},100);
+			var c = document.getElementById("myCanvas");
+			var ctx=c.getContext("2d");
+			ctx.fillStyle="red";
+			
+
+			function add(){
+				If (x<=50){
+					x = x+1;}
+					
+					ctx.fillRect(0,0,300,150);
+			ctx.clearRect(x,40,50,50);
+
+
+			}
+			
+		</script>
+	</body>
+
+</html>
